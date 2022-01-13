@@ -26,6 +26,10 @@ header.birthday span {
     line-height: 15vh;
     }
 
+header.birthday h1 {
+    text-shadow: 2px 2px #ff00eabe;
+    }
+
 form.birthday {
     background-color: rgba(238, 238, 238, 0.822);
     width: 80%;
@@ -33,6 +37,7 @@ form.birthday {
     margin: 0 auto;
     border-radius: 10% / 80%;
     box-shadow: rgba(47, 79, 79, 0.911) 10px 10px 0px 5px;
+    padding: 20px 30px;
 }
 
 footer.birthday {
@@ -40,6 +45,7 @@ footer.birthday {
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 10px;
 }
 footer.birthday img {
     position: relative;
@@ -70,8 +76,8 @@ footer.birthday img:nth-child(3) {
 
 footer.birthday img:last-child {
     left: 0;
-    bottom: -29px;
-    animation: run 50s linear infinite;
+    bottom: 118px;
+    animation: run 30s 4s linear infinite;
 }
 @keyframes run {
     0% {left: -50vw;}
@@ -79,3 +85,27 @@ footer.birthday img:last-child {
         left: 100vw;
     }
 }
+
+.formFlex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.name, .age, .chooseGift, .choosePlace, .color, .cake {
+    flex-basis: 40%;
+    padding: 10px;
+}
+
+.request, .wish {
+    width: 90%;
+    margin: 10px auto;
+}
+input, textarea, select {
+    margin-left: 10px;
+    vertical-align: middle;
+    border: 1px rgba(255, 0, 191, 0.26) solid;
+    box-shadow: inset rgba(138, 22, 122, 0.527)1px 1px 3px;
+    padding: 5px;
+    color:rgba(47, 79, 79, 0.972)
+}
+
