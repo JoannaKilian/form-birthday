@@ -1,0 +1,81 @@
+/* font-family: 'Roboto Mono', monospace;
+font-family: 'Yanone Kaffeesatz', sans-serif; */
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    background-image: url(/images/landscape-g95c69f7f5_1280.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color:darkslategray;
+    font-size: 28px;
+    overflow: hidden;
+}
+header.birthday {
+    text-align: center;
+}
+header.birthday span {
+    vertical-align: -100%;
+    line-height: 15vh;
+    }
+
+form.birthday {
+    background-color: rgba(238, 238, 238, 0.822);
+    width: 80%;
+    height: 65vh;
+    margin: 0 auto;
+    border-radius: 10% / 80%;
+    box-shadow: rgba(47, 79, 79, 0.911) 10px 10px 0px 5px;
+}
+
+footer.birthday {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+footer.birthday img {
+    position: relative;
+    height: 150px;
+    bottom: -100px;
+}
+
+footer.birthday img:nth-child(1) {
+    left: 5%;
+    animation: move 15s 2s linear infinite;
+}
+footer.birthday img:nth-child(2) {
+    right: 5%;
+    animation: move 12s linear infinite;
+}
+footer.birthday img:nth-child(3) {
+    left: 72vw;
+    animation: move 16s 4s linear infinite;
+}
+
+@keyframes move {
+    0% {opacity: 0;}
+    20% {opacity: 1}
+    100% {opacity: 1;
+        bottom: 110vh;
+    }
+}
+
+footer.birthday img:last-child {
+    left: 0;
+    bottom: -29px;
+    animation: run 50s linear infinite;
+}
+@keyframes run {
+    0% {left: -50vw;}
+    100% {
+        left: 100vw;
+    }
+}
