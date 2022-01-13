@@ -100,12 +100,19 @@ footer.birthday img:last-child {
     width: 90%;
     margin: 10px auto;
 }
-input, textarea, select {
+input, textarea, select, button {
     margin-left: 10px;
     vertical-align: middle;
     border: 1px rgba(255, 0, 191, 0.26) solid;
     box-shadow: inset rgba(138, 22, 122, 0.527)1px 1px 3px;
     padding: 5px;
     color:rgba(47, 79, 79, 0.972)
+}
+
+button {
+    box-shadow: rgba(138, 22, 122, 0.527)2px 2px 4px;
+}
+button:hover {
+    cursor: pointer;
 }
 
